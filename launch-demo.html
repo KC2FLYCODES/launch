@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Turn It On | $0 Down Websites for Local Service Businesses | Thrustra</title>
+<meta name="description" content="Thrustra builds your site before you pay. Turn it on for $0 down and $297 a month, and own it outright after 12 months. Or own it today for $1,500.">
+<link rel="canonical" href="https://thrustra.com/launch/">
+<meta name="theme-color" content="#050505">
+<link rel="icon" href="/favicon-32x32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thrustra.com/launch/">
+<meta property="og:title" content="Your site is already built. Turn it on for $0 down.">
+<meta property="og:description" content="$297/mo, yours outright after 12 months. Leads to your phone, Google profile, review requests, monthly report.">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#050505;--ink-2:#0b0b0b;--card:#0d0d0d;--card-hi:#131313;
+  --grid:rgba(248,246,242,.08);--grid-hi:rgba(248,246,242,.16);
+  --paper:#F8F6F2;--bone:rgba(248,246,242,.62);--bone-dim:rgba(248,246,242,.4);
+  --accent:#C8F04A;--accent-dim:rgba(200,240,74,.1);--accent-mid:rgba(200,240,74,.32);--warn:#FF6B4A;
+  --f-display:'Bebas Neue',Impact,sans-serif;--f-head:'DM Sans',system-ui,sans-serif;--f-body:'DM Sans',system-ui,sans-serif;--f-mono:'JetBrains Mono',ui-monospace,monospace;
+  --gutter:clamp(16px,4vw,48px);--max:1180px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--ink);color:var(--paper);font-family:var(--f-body);font-weight:400;line-height:1.6;overflow-x:hidden}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.mono{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bone-dim)}
+.skip{position:absolute;left:-999px;top:0;background:var(--accent);color:var(--ink);padding:.6rem 1rem;z-index:300}
+.skip:focus{left:8px;top:8px}
+
+.hdr{position:sticky;top:0;z-index:50;background:rgba(5,5,5,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--grid)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;height:64px;gap:1rem}
+.logo{font-family:var(--f-display);font-size:1.7rem;letter-spacing:.06em;text-decoration:none;line-height:1}
+.hdr-r{display:flex;align-items:center;gap:1.2rem}
+.hdr-r a.tel{font-family:var(--f-mono);font-size:.78rem;text-decoration:none;color:var(--bone)}
+.hdr-r a.tel:hover{color:var(--accent)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:48px;padding:.9rem 1.5rem;font-family:var(--f-head);font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;transition:background .2s,color .2s,border-color .2s}
+.btn-a{background:var(--accent);color:var(--ink)}
+.btn-a:hover{background:#d8ff63}
+.btn-o{border-color:var(--grid-hi);color:var(--paper);background:transparent}
+.btn-o:hover{border-color:var(--accent);color:var(--accent)}
+.btn-sm{min-height:40px;padding:.55rem 1rem;font-size:.72rem}
+
+/* hero */
+.hero{padding:clamp(56px,9vw,112px) 0 clamp(48px,7vw,88px);border-bottom:1px solid var(--grid)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr);gap:clamp(2rem,5vw,4.5rem);align-items:end}
+.kicker{display:inline-flex;align-items:center;gap:.6rem;margin-bottom:1.4rem}
+.kicker::before{content:'';width:8px;height:8px;background:var(--accent)}
+.hero h1{font-family:var(--f-display);font-weight:400;font-size:clamp(3.4rem,9.5vw,8.4rem);line-height:.88;letter-spacing:.005em;text-transform:uppercase}
+.hero h1 .hl{color:var(--accent)}
+.hero-sub{margin-top:1.6rem;font-size:clamp(1.02rem,1.5vw,1.2rem);color:var(--bone);max-width:34rem}
+.hero-cta{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.8rem}
+
+.preview{border:1px solid var(--grid-hi);background:var(--card);padding:1.4rem}
+.preview .mono{display:block;margin-bottom:.8rem}
+.preview h2{font-family:var(--f-head);font-weight:700;font-size:1.25rem;line-height:1.25}
+.preview p{color:var(--bone);font-size:.92rem;margin-top:.5rem}
+.preview .btn{margin-top:1.1rem;width:100%}
+.expiry{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--grid);font-family:var(--f-mono);font-size:.74rem;color:var(--warn);letter-spacing:.06em}
+.steps-mini{list-style:none;counter-reset:s}
+.steps-mini li{counter-increment:s;display:grid;grid-template-columns:2rem 1fr;padding:.75rem 0;border-top:1px solid var(--grid);font-size:.95rem}
+.steps-mini li:first-child{border-top:0}
+.steps-mini li::before{content:counter(s,decimal-leading-zero);font-family:var(--f-mono);font-size:.75rem;color:var(--accent);padding-top:.2rem}
+.steps-mini span{display:block;color:var(--bone);font-size:.84rem}
+
+/* sections */
+.sec{padding:clamp(64px,9vw,112px) 0;border-bottom:1px solid var(--grid)}
+.sec-h{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem;align-items:end;margin-bottom:clamp(2rem,4vw,3.2rem)}
+.sec-h h2{font-family:var(--f-display);font-weight:400;font-size:clamp(2.6rem,6vw,4.8rem);line-height:.92;text-transform:uppercase}
+.sec-h h2 .hl{color:var(--accent)}
+.sec-h>p{color:var(--bone);max-width:30rem;justify-self:end}
+.sec-h .mono{display:block;margin-bottom:.9rem}
+
+/* compare */
+.cmp{width:100%;border-collapse:collapse;font-size:.95rem}
+.cmp th,.cmp td{text-align:left;padding:1.05rem 1rem;border-bottom:1px solid var(--grid);vertical-align:top}
+.cmp thead th{font-family:var(--f-mono);font-size:.7rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--bone-dim)}
+.cmp tbody th{font-family:var(--f-head);font-weight:600;width:28%}
+.cmp td{color:var(--bone)}
+.cmp tr.us th,.cmp tr.us td{background:var(--accent-dim);color:var(--paper)}
+.cmp tr.us th{color:var(--accent)}
+.cmp .no{color:var(--warn)}
+.fine{margin-top:1rem;font-size:.78rem;color:var(--bone-dim)}
+
+/* options */
+.opts{display:grid;grid-template-columns:1.15fr 1fr;gap:1px;background:var(--grid);border:1px solid var(--grid)}
+.opt{background:var(--ink);padding:clamp(1.5rem,3vw,2.4rem);display:flex;flex-direction:column}
+.opt.rec{background:var(--card)}
+.opt-tag{align-self:flex-start;font-family:var(--f-mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;padding:.3rem .55rem;border:1px solid var(--grid-hi);color:var(--bone)}
+.opt.rec .opt-tag{background:var(--accent);color:var(--ink);border-color:var(--accent)}
+.opt h3{font-family:var(--f-display);font-weight:400;font-size:clamp(2.4rem,4.5vw,3.4rem);line-height:1;margin-top:1rem;text-transform:uppercase}
+.price{display:flex;align-items:baseline;gap:.6rem;margin-top:.6rem;flex-wrap:wrap}
+.price b{font-family:var(--f-display);font-weight:400;font-size:clamp(2.6rem,5vw,3.6rem);line-height:.9;letter-spacing:.01em}
+.price span{color:var(--bone);font-size:.92rem}
+.opt>p{color:var(--bone);margin-top:.9rem}
+.opt ul{list-style:none;margin:1.3rem 0 1.6rem;border-top:1px solid var(--grid)}
+.opt li{padding:.7rem 0 .7rem 1.4rem;border-bottom:1px solid var(--grid);position:relative;font-size:.94rem}
+.opt li::before{content:'';position:absolute;left:0;top:1.15rem;width:7px;height:7px;background:var(--accent)}
+.opt:not(.rec) li::before{background:var(--bone-dim)}
+.opt .btn{margin-top:auto}
+.terms{margin-top:1.4rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--grid);border:1px solid var(--grid)}
+.terms div{background:var(--ink);padding:1.1rem 1.2rem}
+.terms b{display:block;font-family:var(--f-head);font-weight:700;font-size:.95rem;margin-bottom:.3rem}
+.terms span{color:var(--bone);font-size:.86rem}
+
+/* month timeline */
+.tl{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--accent)}
+.tl div{padding:1.4rem 1.2rem 1.4rem 0}
+.tl div+div{padding-left:1.2rem;border-left:1px solid var(--grid)}
+.tl .mono{color:var(--accent);display:block;margin-bottom:.6rem}
+.tl h3{font-family:var(--f-head);font-weight:700;font-size:1.05rem;margin-bottom:.4rem}
+.tl p{color:var(--bone);font-size:.9rem}
+
+/* guarantee */
+.promise{display:grid;grid-template-columns:auto 1fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center;border:1px solid var(--accent-mid);background:var(--accent-dim);padding:clamp(1.5rem,4vw,2.8rem)}
+.promise .big{font-family:var(--f-display);font-size:clamp(4rem,10vw,7.5rem);line-height:.85;color:var(--accent)}
+.promise h2{font-family:var(--f-display);font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:.95;text-transform:uppercase}
+.promise p{color:var(--bone);margin-top:.7rem;max-width:40rem}
+
+/* proof */
+.proof{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.quote{font-family:var(--f-head);font-weight:500;letter-spacing:-.01em;font-size:clamp(1.3rem,2.4vw,1.85rem);line-height:1.3}
+.quote em{font-style:normal;color:var(--accent)}
+.who{margin-top:1.2rem;color:var(--bone);font-size:.9rem}
+.builds{list-style:none;border-top:1px solid var(--grid)}
+.builds li{border-bottom:1px solid var(--grid)}
+.builds a{display:flex;justify-content:space-between;gap:1rem;padding:1rem 0;text-decoration:none}
+.builds a:hover b{color:var(--accent)}
+.builds b{font-family:var(--f-head);font-weight:600}
+.builds span{color:var(--bone-dim);font-size:.85rem;text-align:right}
+
+/* faq */
+.faq{max-width:860px}
+.faq details{border-bottom:1px solid var(--grid)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:1rem;padding:1.2rem 0;font-family:var(--f-head);font-weight:600;font-size:clamp(1.02rem,1.8vw,1.2rem)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';color:var(--accent);font-size:1.4rem;line-height:1}
+.faq details[open] summary::after{content:'\2013'}
+.faq details p{padding:0 0 1.3rem;color:var(--bone);max-width:44rem}
+
+/* form */
+.go{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.go h2{font-family:var(--f-display);font-weight:400;font-size:clamp(2.8rem,6vw,4.8rem);line-height:.9;text-transform:uppercase}
+.go h2 .hl{color:var(--accent)}
+.go-aside>p{color:var(--bone);margin-top:1rem;max-width:26rem}
+.go-aside ul{list-style:none;margin-top:1.6rem;border-top:1px solid var(--grid)}
+.go-aside li{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:.85rem 0;border-bottom:1px solid var(--grid);font-size:.92rem}
+.go-aside li a{text-decoration:none}
+.go-aside li a:hover{color:var(--accent)}
+.form{border:1px solid var(--grid-hi);background:var(--card);padding:clamp(1.3rem,3vw,2.2rem)}
+.field{margin-bottom:1.1rem}
+.field>label,.field>.lbl{display:block;font-family:var(--f-mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bone-dim);margin-bottom:.5rem}
+.inp{width:100%;min-height:48px;background:var(--ink);border:1px solid var(--grid-hi);color:var(--paper);padding:.8rem 1rem;font-family:var(--f-body);font-size:1rem;color-scheme:dark}
+.inp:focus{outline:none;border-color:var(--accent)}
+textarea.inp{min-height:96px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chips label{position:relative}
+.chips input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.chips span{display:inline-block;min-height:44px;padding:.6rem 1rem;border:1px solid var(--grid-hi);font-size:.9rem;line-height:1.6}
+.chips input:checked+span{background:var(--accent);color:var(--ink);border-color:var(--accent);font-weight:600}
+.chips input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+.form .btn{width:100%;margin-top:.4rem}
+.form-err{color:var(--warn);font-size:.86rem;min-height:1.3em;margin-top:.7rem}
+.done{display:none}
+.done.on{display:block}
+.done h3{font-family:var(--f-display);font-weight:400;font-size:2.6rem;line-height:1;color:var(--accent);text-transform:uppercase}
+.done p{color:var(--bone);margin-top:.6rem}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+.ftr{padding:2rem 0 calc(2rem + env(safe-area-inset-bottom));font-size:.8rem;color:var(--bone-dim)}
+.ftr-in{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.ftr a{text-decoration:none}
+.ftr a:hover{color:var(--accent)}
+
+.mbar{display:none}
+
+@media (max-width:960px){
+  .hero-grid,.sec-h,.opts,.proof,.go{grid-template-columns:1fr}
+  .sec-h>p{justify-self:start}
+  .tl{grid-template-columns:1fr 1fr}
+  .tl div:nth-child(3){padding-left:0;border-left:0}
+  .tl div:nth-child(n+3){border-top:1px solid var(--grid)}
+  .terms{grid-template-columns:1fr}
+}
+@media (max-width:680px){
+  .hdr-r a.tel{display:none}
+  .tl{grid-template-columns:1fr}
+  .tl div,.tl div+div{padding:1.1rem 0;border-left:0;border-top:1px solid var(--grid)}
+  .tl div:first-child{border-top:0}
+  .promise{grid-template-columns:1fr}
+  .row2{grid-template-columns:1fr}
+  .cmp thead{display:none}
+  .cmp,.cmp tbody,.cmp tr,.cmp th,.cmp td{display:block;width:100%}
+  .cmp tr{border-bottom:1px solid var(--grid);padding:.9rem 0}
+  .cmp th,.cmp td{border:0;padding:.2rem .8rem}
+  .cmp td::before{content:attr(data-l) ' · ';font-family:var(--f-mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--bone-dim)}
+  .cmp tr.us{background:var(--accent-dim)}
+  .cmp tr.us th,.cmp tr.us td{background:none}
+  .mbar{display:flex;position:fixed;inset:auto 0 0 0;z-index:60;gap:.5rem;background:rgba(5,5,5,.96);border-top:1px solid var(--grid);padding:.6rem 16px calc(.6rem + env(safe-area-inset-bottom))}
+  .mbar a{flex:1}
+  body{padding-bottom:72px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VLEJ1KE7KW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VLEJ1KE7KW');</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is $0 down really $0?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is no setup fee. Your first $297 month is billed the day the site goes live, not before."}},
+{"@type":"Question","name":"When do I own it?","acceptedAnswer":{"@type":"Answer","text":"After 12 monthly payments the site, domain and every account are yours outright. You can keep the growth service or drop to basic care."}},
+{"@type":"Question","name":"Can I cancel?","acceptedAnswer":{"@type":"Answer","text":"After the first 3 months, yes, any month. To keep the site, pay the remaining ownership balance. Each month counts $125 toward the $1,500 ownership price."}}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="logo" href="https://thrustra.com/">THRUSTRA</a>
+    <div class="hdr-r">
+      <a class="tel" href="tel:+17034777408">703-477-7408</a>
+      <a class="btn btn-a btn-sm" href="#go">Turn it on</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div id="heroGeneric">
+        <p class="mono kicker">For local service businesses</p>
+        <h1>We build it first. <span class="hl">You turn it on for $0.</span></h1>
+        <p class="hero-sub">You see your finished site before you pay a dollar. Then turn it on for $297 a month and it's yours outright after 12 months. Or own it today for $1,500.</p>
+      </div>
+      <div id="heroPersonal" hidden>
+        <p class="mono kicker">Prepared for <span data-p-name></span></p>
+        <h1>Your site is built. <span class="hl">Turn it on for $0 down.</span></h1>
+        <p class="hero-sub">The hard part's done. Pick how you want to own it below, and it can be live on your domain within 48 hours of your go-ahead.</p>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-a" href="#go" data-plan="Run It">Turn it on, $0 down</a>
+        <a class="btn btn-o" href="#options">Compare the two options</a>
+      </div>
+    </div>
+
+    <aside class="preview" id="cardPersonal" hidden>
+      <span class="mono">Your preview</span>
+      <h2 data-p-name></h2>
+      <p>Built, working, mobile-ready. The forms are wired and nothing is a mockup.</p>
+      <a class="btn btn-o" data-p-preview href="#" target="_blank" rel="noopener">Open your site &rarr;</a>
+      <p class="expiry">Preview link comes down <span data-p-exp></span>.</p>
+    </aside>
+
+    <aside class="preview" id="cardGeneric">
+      <span class="mono">How it works</span>
+      <ol class="steps-mini">
+        <li><div>We build your site<span>Free, on our time, before any money changes hands.</span></div></li>
+        <li><div>You see it working<span>A live link on your phone, not a mockup.</span></div></li>
+        <li><div>You pick how to own it<span>$0 down and $297/mo, or $1,500 once.</span></div></li>
+        <li><div>Live in 48 hours<span>Your domain, your Google profile, and leads to your phone.</span></div></li>
+      </ol>
+    </aside>
+  </div>
+</section>
+
+<section class="sec" id="math">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><span class="mono">What you're paying now</span><h2>Stop renting <span class="hl">your leads.</span></h2></div>
+      <p>Most local service businesses pay for leads somebody else owns. The lead list resets every month, and you end up with nothing to show for it.</p>
+    </div>
+    <table class="cmp">
+      <thead><tr><th>Option</th><th>Typical cost</th><th>Who else gets the lead</th><th>What you own at the end</th></tr></thead>
+      <tbody>
+        <tr><th>Lead marketplaces</th><td data-l="Cost">$40–$110 per lead, plus a yearly membership</td><td data-l="Shared">Often 3–4 other contractors</td><td data-l="Own" class="no">Nothing</td></tr>
+        <tr><th>Rented agency websites</th><td data-l="Cost">$249–$449/mo, often on a contract</td><td data-l="Shared">Only you</td><td data-l="Own" class="no">Nothing. Cancel and the site disappears.</td></tr>
+        <tr><th>Field-service software</th><td data-l="Cost">$99–$199/mo and rising</td><td data-l="Shared">No leads, it only manages jobs</td><td data-l="Own" class="no">Nothing</td></tr>
+        <tr class="us"><th>Thrustra · Run It</th><td data-l="Cost">$0 down, $297/mo</td><td data-l="Shared">Only you</td><td data-l="Own">The site, domain and every account, after 12 months</td></tr>
+      </tbody>
+    </table>
+    <p class="fine">Ranges are typical 2026 published pricing for roofing, remodeling and home-service trades. Your market may differ.</p>
+  </div>
+</section>
+
+<section class="sec" id="options">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><span class="mono">Two ways to own it</span><h2>Pick one. <span class="hl">Both end with you owning it.</span></h2></div>
+      <p>No long contracts and no lock-in. The only difference is whether you pay for ownership up front or over a year.</p>
+    </div>
+    <div class="opts">
+      <div class="opt rec">
+        <span class="opt-tag">Most pick this</span>
+        <h3>Run It</h3>
+        <div class="price"><b>$0 down</b><span>then $297/mo · yours after 12 months</span></div>
+        <p>We turn your site on and keep it producing leads. You pay nothing upfront, and every month moves you toward owning it.</p>
+        <ul>
+          <li>Your site live on your domain within 48 hours</li>
+          <li>Google Business Profile set up and optimized</li>
+          <li>Every new lead texted to your phone the moment it comes in</li>
+          <li>Review requests sent after each job, so your Google rating climbs</li>
+          <li>Monthly one-page report: leads, calls and reviews</li>
+          <li>Edits and updates whenever you need them</li>
+        </ul>
+        <a class="btn btn-a" href="#go" data-plan="Run It">Turn it on, $0 down</a>
+      </div>
+      <div class="opt">
+        <span class="opt-tag">Pay once</span>
+        <h3>Own It</h3>
+        <div class="price"><b>$1,500</b><span>one time · yours today</span></div>
+        <p>Pay once and it's yours on day one: the code, the domain and every login. Good if you'd rather run it yourself.</p>
+        <ul>
+          <li>Your site live on your domain within 48 hours</li>
+          <li>Forms wired to your inbox</li>
+          <li>Every account set up in your name</li>
+          <li>30 days of support after launch</li>
+          <li>Optional care plan from $97/mo for hosting and edits</li>
+        </ul>
+        <a class="btn btn-o" href="#go" data-plan="Own It">Own it for $1,500</a>
+      </div>
+    </div>
+    <div class="terms">
+      <div><b>$0 means $0</b><span>No setup fee. Your first month is billed the day you go live, not before.</span></div>
+      <div><b>3 months, then month to month</b><span>After that, cancel any month. To keep the site, pay off the rest of the $1,500. Each month counts $125 toward it.</span></div>
+      <div><b>After 12 months it's yours</b><span>Keep the growth service at $197/mo, or drop to basic care at $97/mo. Your call.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="first-90">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><span class="mono">What happens after you say yes</span><h2>Your first <span class="hl">90 days.</span></h2></div>
+    </div>
+    <div class="tl">
+      <div><span class="mono">Day 1–2</span><h3>Live</h3><p>Site on your domain, forms tested, and every lead texted to your phone.</p></div>
+      <div><span class="mono">Week 1</span><h3>On the map</h3><p>Google Business Profile built out with photos, services and service area. Google verifies it by postcard or video.</p></div>
+      <div><span class="mono">Week 2+</span><h3>Reviews</h3><p>After each job, your customer gets a one-tap review request. Your rating starts climbing.</p></div>
+      <div><span class="mono">Day 30, 60, 90</span><h3>The report</h3><p>One page: leads, calls, reviews, and what we're changing next month.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="promise">
+      <div class="big">60</div>
+      <div>
+        <h2>No leads in 60 days? Your next two months are free.</h2>
+        <p>If your site doesn't bring in a single new lead in its first 60 days live, you don't pay for months three and four. We keep working on it until it does.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="proof">
+  <div class="wrap proof">
+    <div>
+      <span class="mono" style="display:block;margin-bottom:1rem">On the record</span>
+      <p class="quote">&ldquo;They built our whole operation in three weeks. I run jobs, send invoices, and update clients from <em>one screen</em> on my phone. I own every login. Best money I&rsquo;ve spent on the business.&rdquo;</p>
+      <p class="who">Danny Alvarado · Founder, Alvarado&rsquo;s Property Maintenance · Marshall, VA</p>
+    </div>
+    <div>
+      <span class="mono" style="display:block;margin-bottom:1rem">Recent local builds</span>
+      <ul class="builds">
+        <li><a href="https://kc2flycodes.github.io/Davis/blue-eclipse/" target="_blank" rel="noopener"><b>Blue Eclipse Pool &amp; Spa</b><span>Pool service · Raleigh</span></a></li>
+        <li><a href="https://kc2flycodes.github.io/Davis/vendetta/" target="_blank" rel="noopener"><b>Vendetta Mobile Detailing</b><span>Detailing · Raleigh</span></a></li>
+        <li><a href="https://ctc.thrustra.com" target="_blank" rel="noopener"><b>Cleared to Clean</b><span>Federal janitorial · VA &amp; FL</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-h"><div><span class="mono">Straight answers</span><h2>Before you <span class="hl">decide.</span></h2></div></div>
+    <div class="faq">
+      <details><summary>Is $0 down really $0?</summary><p>Yes. There's no setup fee and no deposit. Your first $297 month is billed the day the site goes live on your domain, not before.</p></details>
+      <details><summary>When do I own it?</summary><p>After 12 payments, the site, the domain and every account are yours outright. Even before that, every account is set up in your name from day one.</p></details>
+      <details><summary>What if I want out?</summary><p>After the first 3 months you can cancel any month. To keep the site, pay off whatever's left of the $1,500 ownership price. Each month you've paid counts $125 toward it. Or let it come down. No penalty and no fight.</p></details>
+      <details><summary>Do I need a domain already?</summary><p>No. If you have one, we use it. If you don't, we register one in your name.</p></details>
+      <details><summary>Who actually does the work?</summary><p>Karim Cisse runs strategy and is your contact, and Anthony Taylor's studio builds. No offshore handoff and no account-manager layer.</p></details>
+      <details><summary>Why build before I pay?</summary><p>Because you shouldn't have to imagine it. You see your actual site working before you decide anything.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="go">
+  <div class="wrap go">
+    <div class="go-aside">
+      <span class="mono" style="display:block;margin-bottom:1rem">Go-ahead</span>
+      <h2>Turn it <span class="hl">on.</span></h2>
+      <p>Send this and Karim confirms by text within a few hours. Your site goes live within 48 hours of the go-ahead.</p>
+      <ul>
+        <li><span class="mono">Call or text</span><a href="tel:+17034777408">703-477-7408</a></li>
+        <li><span class="mono">Rather talk first</span><a href="https://calendly.com/thrustragrowthagency" target="_blank" rel="noopener">Book 15 minutes &rarr;</a></li>
+      </ul>
+    </div>
+    <form class="form" id="goForm" novalidate>
+      <div class="form-body">
+        <div class="hp" aria-hidden="true"><label>Leave blank<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+        <div class="field"><span class="lbl" id="l-plan">Option</span>
+          <div class="chips" role="radiogroup" aria-labelledby="l-plan">
+            <label><input type="radio" name="Plan" value="Run It" required checked><span>Run It · $0 down</span></label>
+            <label><input type="radio" name="Plan" value="Own It"><span>Own It · $1,500</span></label>
+            <label><input type="radio" name="Plan" value="Questions first"><span>I have questions first</span></label>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="f-name">Your name</label><input class="inp" id="f-name" name="Name" autocomplete="name" required></div>
+          <div class="field"><label for="f-phone">Cell (for the go-live text)</label><input class="inp" id="f-phone" name="Phone" type="tel" inputmode="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="field"><label for="f-biz">Business</label><input class="inp" id="f-biz" name="Business" autocomplete="organization" required></div>
+        <div class="row2">
+          <div class="field"><label for="f-email">Email</label><input class="inp" id="f-email" name="Email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="f-domain">Domain, if you have one</label><input class="inp" id="f-domain" name="Domain" placeholder="yourbusiness.com"></div>
+        </div>
+        <div class="field"><label for="f-msg">Anything else? (optional)</label><textarea class="inp" id="f-msg" name="Message"></textarea></div>
+        <button type="submit" class="btn btn-a">Turn it on</button>
+        <p class="form-err" role="alert"></p>
+      </div>
+      <div class="done" role="status">
+        <h3>Got it.</h3>
+        <p>Karim will text you within a few hours to confirm and line up go-live.</p>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr-in">
+    <span>&copy; <span id="yr">2026</span> Thrustra · Founder-led · Operating across NY, ATL, East Coast</span>
+    <span><a href="https://thrustra.com/">thrustra.com</a> · <a href="https://thrustra.com/privacy">Privacy</a></span>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-o" href="tel:+17034777408">Call</a>
+  <a class="btn btn-a" href="#go" data-plan="Run It">Turn it on</a>
+</div>
+
+<script>
+/* Thrustra /launch — personalized go-live page.
+   Personalize with ?for=: thrustra.com/launch/?for=antonio (a #antonio hash also works)
+   Add a prospect by adding an entry below. Expiry is the date the preview link comes down (ISO). */
+(function () {
+  'use strict';
+
+  var PROSPECTS = {
+    antonio:  { name: "Antonio's Construction",   preview: 'https://kc2flycodes.github.io/ANTONIO/', expires: '2026-12-04' },
+    oxendine: { name: 'Oxendine & Son Roofing',     preview: 'https://kc2flycodes.github.io/OS/',      expires: '2026-12-04' },
+    sws:      { name: 'Sam W. Smith Inc.',          preview: 'https://kc2flycodes.github.io/SWS/',     expires: '2026-12-04' },
+    exotic:   { name: 'Exotic Smoke Shop',          preview: 'https://kc2flycodes.github.io/EXOTIC/',  expires: '2026-12-04' }
+  };
+  var ENDPOINT = 'https://formspree.io/f/mdayqzrd';
+
+  var $ = function (s, c) { return (c || document).querySelector(s); };
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+
+  var qs = (location.search.match(/[?&]for=([\w-]+)/) || [])[1];
+  var slug = (qs || (location.hash || '').replace('#', '')).toLowerCase().trim();
+  var p = PROSPECTS[slug];
+  window.addEventListener('hashchange', function () {
+    var h = location.hash.replace('#', '').toLowerCase();
+    if (PROSPECTS[h] && h !== slug) location.reload();
+  });
+
+  if (p) {
+    var exp = new Date(p.expires + 'T23:59:00');
+    var expTxt = exp.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+    $$('[data-p-name]').forEach(function (el) { el.textContent = p.name; });
+    $$('[data-p-preview]').forEach(function (el) { el.href = p.preview; });
+    $$('[data-p-exp]').forEach(function (el) { el.textContent = expTxt; });
+    $('#heroGeneric').hidden = true;
+    $('#heroPersonal').hidden = false;
+    $('#cardGeneric').hidden = true;
+    $('#cardPersonal').hidden = false;
+    var biz = $('#f-biz'); if (biz) biz.value = p.name;
+    document.title = p.name + ' · Turn it on | Thrustra';
+    if (Date.now() > exp.getTime()) {
+      $('#cardPersonal .expiry').textContent = 'This preview has expired. Ask Karim to put it back up.';
+    }
+  }
+
+  /* plan preselect */
+  $$('[data-plan]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var r = $('input[name="Plan"][value="' + b.getAttribute('data-plan') + '"]');
+      if (r) r.checked = true;
+    });
+  });
+
+  /* form */
+  var form = $('#goForm');
+  if (form) {
+    var err = $('.form-err', form);
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var ok = true;
+      $$('[required]', form).forEach(function (f) {
+        if (f.type === 'radio') { if (!$('input[name="' + f.name + '"]:checked', form)) ok = false; }
+        else if (!f.checkValidity()) ok = false;
+      });
+      if (!ok) { err.textContent = 'Fill in the required fields.'; return; }
+      err.textContent = '';
+      var btn = $('[type=submit]', form);
+      btn.disabled = true; btn.textContent = 'Sending…';
+      var fd = new FormData(form);
+      fd.append('_subject', '[LAUNCH · ' + String(fd.get('Plan') || '').toUpperCase() + '] ' + (fd.get('Business') || ''));
+      fd.append('Source', slug ? 'launch#' + slug : 'launch');
+      fetch(ENDPOINT, { method: 'POST', body: fd, headers: { Accept: 'application/json' } })
+        .then(function (r) { if (!r.ok) throw new Error('bad'); })
+        .then(function () {
+          form.querySelector('.form-body').hidden = true;
+          $('.done', form).classList.add('on');
+          if (window.gtag) window.gtag('event', 'generate_lead', { form: 'launch', plan: fd.get('Plan'), prospect: slug || 'none' });
+        })
+        .catch(function () {
+          err.innerHTML = 'That didn’t send. Call or text Karim at <a href="tel:+17034777408">703-477-7408</a>.';
+          btn.disabled = false; btn.textContent = 'Turn it on';
+        });
+    });
+  }
+
+  var y = $('#yr'); if (y) y.textContent = new Date().getFullYear();
+})();
+
+</script>
+</body>
+</html>
